@@ -1,0 +1,6 @@
+<label for="name">Pokemon </label>
+<input id="name" type="text" [formControl]="name">
+<button (click)="retrievePokemonByName(name.value)">Search</button>    
+
+
+<pre *ngIf="pokeDetails">{{pokeDetails | json}}</pre>
